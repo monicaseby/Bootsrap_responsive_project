@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Office Furniture</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: "Mulish", sans-serif;
+            background-color: white;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        .card-title a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .vertical-menu {
+            border-right: 1px solid #ddd;
+            padding-right: 15px;
+        }
+
+        .vertical-menu h5 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .vertical-menu a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 0;
+            color: #555;
+        }
+
+        .vertical-menu a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .horizontal-section h5 {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+
+        .trending-section {
+            background-color: #efebeb;
+            padding: 20px 15px;
+        }
+
+        .trending-section h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .trending-section p {
+            color: #555;
+            margin: 10px 0 15px;
+        }
+
+
+        .trending-section img {
+            max-width: 100%;
+            height: 350px;
+            border-radius: 8px;
+        }
+
+       
+
+        /* Divider Style */
+        .divider {
+            border-top: 1px solid #ddd;
+            margin: 20px auto;
+            width: calc(100% - 30px);
+        }
+
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .furniture-style-section,
+        .furniture-brand-section {
+            margin-bottom: 20px;
+        }
+
+        /* Card Styling */
+        .furniture-card {
+            height: 300px;
+            margin: 10px auto;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Image Styling */
+        .furniture-img {
+            width: 100%;
+            height: 70%;
+            object-fit: contain;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* Details Styling */
+        .furniture-details {
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .furniture-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+
+        .product-showcase {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-header {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .product-box {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            max-height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-rating i {
+            margin-right: 2px;
+        }
+
+        .product-price {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        .current-price {
+            font-weight: bold;
+        }
+
+        .sale-badge {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .product-header {
+                font-size: 24px;
+            }
+
+            .product-name {
+                font-size: 14px;
+            }
+
+            .product-box {
+                padding: 10px;
+            }
+
+            .product-image {
+                max-height: 150px;
+            }
+        }
+
+        @media (max-width: 426px) {
+            .product-header {
+                font-size: 20px;
+            }
+
+            .product-name {
+                font-size: 12px;
+            }
+
+            .product-box {
+                padding: 8px;
+            }
+
+            .product-image {
+                max-height: 120px;
+               
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+     <!-- navbar -->
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <img class="ms-3 me-1"
+            src="https://media.istockphoto.com/id/1125893421/vector/vector-logo-design-template-in-simple-linear-style-home-decor-store.jpg?s=612x612&w=0&k=20&c=-y_cnnmn_3kXCCRha2HJKmaG2qkdciFJV2J2jJnZV0k="
+            alt="img1" width="60px" height="60px">
+        <a class="navbar-brand" href="./index.html">Urban Nest</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./about-us.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="living-room.html">Livingroom</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="garden.html">Outdoor & Garden</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home-office.html">Home Office</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="kitchen.html">Kitchen & Dining</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="bedroom.html">Bedrooom & Decor</a>
+                  </li>
+               
+            </ul>
+           
+            <div class="cart">
+                <a style="color: black;" href="./profile.html"><i class="fa-regular fa-user ms-4 "></i></a>
+                <a style="color: black;" href="./cart.html"><i class="fa-solid fa-cart-shopping ms-4"></i></a>
+                <a style="color: black;" href="./wishlist.html"><i class="fa-regular fa-heart ms-3 me-5"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Section: Kitchen and Dining Furniture -->
+    <section class="container my-5">
+        <h2 class="section-header text-dark text-center mb-4"><b>Home Office Furniture</b></h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./office-desk.html"><img width="100%" src="https://images.durian.in/Durian/durian/product/800x800/54571668593522.jpg?tr=w-1200,q-100,lo-true" class="card-img-top ps-0" alt="Bar Stools & Counter Stools"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./office-desk.html">Office Desk</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./filing-cabinet.html"><img src="https://assets.wfcdn.com/im/15410420/resize-h800-w800%5Ecompr-r85/1913/191393788/Hitchin+2-Drawer+Lateral+Filing+Cabinet.jpg" class="card-img-top ps-0" alt="Dining Tables"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./filing-cabinet.html">Filing Cabinet</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./bookshelf-storage.html"><img src="https://shop.gkwretail.com/cdn/shop/products/Bookshelf5-ShelfOpenBookcasewithMetalFrame.jpg?v=1631443724&width=713" class="card-img-top ps-0" alt="Dining Chairs"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./bookshelf-storage.html">Bookshelf & Storage</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./desk-chair.html"><img src="https://www.grahamandgreen.co.uk/media/catalog/product/cache/e7f674c1bc441eb1262a29de9347cef4/c/p/cpy1013-laurena-wicker-office-chair-lead.jpg" class="card-img-top ps-0" alt="Buffets & Sideboards"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./desk-chair.html">Desk Chair</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mt-3">
+            <!-- Card 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./standing-desk.html"><img src="https://m.media-amazon.com/images/I/81RtE+veZNL._SX679_.jpg" class="card-img-top ps-0" alt="Bar Stools & Counter Stools"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./standing-desk.html">Standing Desk</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./hutch-desk.html"><img src="https://media-uk.landmarkshops.in/cdn-cgi/image/h=750,w=750,q=85,fit=cover/homecentre/1000008244596-1000008244595_01-2100.jpg" class="card-img-top ps-0" alt="Dining Tables"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./hutch-desk.html">Hutch Desk</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./corner-desk.html"><img src="https://media.diy.com/is/image/KingfisherDigital/elegant-corner-desk-1550mm-in-white-minimalist-home-office-solution-h750mm-d1250mm~5056601277605_01c_MP?$MOB_PREV$&$width=1200&$height=1200" class="card-img-top ps-0" alt="Dining Chairs"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./corner-desk.html">Corner Desk</a></h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card">
+                    <a href="./floating-desk.html"><img src="https://cdn.decoist.com/wp-content/uploads/2021/09/Slide-out-tray-of-the-minimal-desk-offers-additional-convenient-workspace-with-ease-57259.jpg" class="card-img-top ps-0" alt="Buffets & Sideboards"></a>
+                    <div class="card-body">
+                        <h5 class="card-title"><a style="text-decoration: none;" href="./floating-desk.html">Floating Desk</a></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <!-- Left Vertical Menu -->
+                <div class="col-md-3 vertical-menu">
+                    <h5>Home Office Furniture by Style</h5>
+                    <ul class="list-unstyled">
+                        <li>Contemporary</li>
+                        <li>Minimalist</li>
+                        <li>Scandinavian</li>
+                        <li>Rustic</li>
+                        <li>Vintage</li>
+                        <li>Bohemian</li>
+                        <li>Traditional</li>
+                        <li>Industrial</li>
+
+
+
+                    </ul>
+                    <h5>Home Office Decor by Brands</h5>
+                        
+                    <ul class="list-unstyled">
+                        <li><b>Brands we collab with</b></li>
+                        <li>Herman Miller</li>
+                        <li>Steelcase</li>
+                        <li>Wayfair</li>
+                        <li>Crate & Barrel</li>
+                        <li>Flexispot</li>
+                        <li>HON</li>
+                       
+
+
+                        <!-- <li><a href="#">Copeland Furniture</a></li>
+                    <li><a href="#">Eagle Furniture</a></li> -->
+                    </ul>
+
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-md-9">
+                    <!--Furniture by Style -->
+                    <div class="furniture-style-section">
+                        <h5>Home Office Furniture by Style</h5>
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://www.thespruce.com/thmb/Tix1E8xSWuwdBaGgIl97ggErFro=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/190605-CK_Chicago_025-4f71035c395b4bcbac60e2c937321898.jpg"
+                                        class="furniture-img" alt="Modern">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Contemporary</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://i.shelterness.com/2020/05/a-minimalist-home-office-with-an-open-shelf-a-desk-with-navy-drawers-a-white-chair-and-a-small-courtyard.jpg"
+                                        class="furniture-img" alt="Mid-Century Modern">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Minimalist</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVxcqKpQhmlmwxwaMbM9l1EUmqEXHh1GYCcQ&s"
+                                        class="furniture-img" alt="Farmhouse">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Scandinavian</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://i.pinimg.com/736x/8f/90/c5/8f90c594bdf3e194dc4abdb6d6a85973.jpg"
+                                        class="furniture-img" alt="Contemporary">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Rustic</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://i.digsdigs.com/2012/09/a-vintage-home-office-with-a-stained-desk-a-stained-chair-with-neutral-upholstery-some-artwork-and-a-vintage-memo-board.jpg"
+                                        class="furniture-img" alt="Coastal">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Vintage</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR75ZfO5zgc6ysaGDDJpKWa1t3WlOyb3EbvFQ&s"
+                                        class="furniture-img" alt="Coastal">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Bohemian</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Furniture by Brand -->
+                    <div class="furniture-brand-section">
+                        <h5>Outdoor & Garden Decor by Brand</h5>
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://imjustcreative.com/wp-content/uploads/2019/06/Herman-MIller-Logo-Design-750x427.jpg"
+                                        class="furniture-img" alt="Four Hands">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Herman Miller</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn8wyPWgCWvT5bHqJ-CfpliIyrA0nSVYYiug&s"
+                                        class="furniture-img" alt="Hooker Furniture">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Steelcase</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPG55h9rvz8AtHhLJOHLoC88xv4Fxx5NOPQ&s"
+                                        class="furniture-img" alt="Lexington">
+                                    <div class="furniture-details">Wayfair</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFkiM24OQUVvjqB9oVZb3FzyGasskcVH_tA&s"
+                                        class="furniture-img" alt="Sunpan">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Crate & Barrel</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://pbs.twimg.com/media/FUibUzqUAAETvVt.jpg"
+                                        class="furniture-img" alt="Sunpan">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Flexispot</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhtFSc34SD-bbWq7iDkz7h6HNlGWoGtI94Pg&s"
+                                        class="furniture-img" alt="Sunpan">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">HON</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container py-5">
+                    <h2 class=" mb-4">Home Office Chairs</h2>
+                    <div class="row g-4">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/71bVFNxs7fL._SX679_.jpg"
+                            alt="Gavin Black Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">Sulfar Home Office Chair</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.2,499 <span class="text-muted text-decoration-line-through">Rs.3,499</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/31uBkMuaLHL._SX300_SY300_QL70_FMwebp_.jpg"
+                            alt="Cove Round Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">High Back Home Office Chair</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.5,499</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/41jhoa5NSCL._SX300_SY300_QL70_FMwebp_.jpg"
+                            alt="The Ansel Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">Executive Home Office Chair</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#e1d7ab'></i>
+                          </div>
+                          <p class="text-danger">Rs.3,499<span class="text-muted text-decoration-line-through">Rs.5,999</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/51b9pF4IJbL._SX300_SY300_QL70_FMwebp_.jpg"
+                            alt="Gavin Black Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">Leatherette Home Office Chair</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.6,899<span class="text-muted text-decoration-line-through">Rs.9,999</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+                
+                
+                
+                  <div class="container py-5">
+                    <h2 class=" mb-4">Home Office Desks</h2>
+                    <div class="row g-4">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/510H+HHKusL._SY300_SX300_.jpg" alt="Meridian Sylvester Chair" width="200px" height="200px">
+                          <h5 class="mt-3">Table with Keyboard Tray</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.12,499<span class="text-muted text-decoration-line-through">Rs.15,499</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/51svSkVziKL._SX300_SY300_QL70_FMwebp_.jpg" alt="Camas Iron Dining Chairs" width="200px" height="200px">
+                          <h5 class="mt-3">Desk with One Tier Shelf</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.11,999</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/91RNuo3ouQL._SX679_.jpg" alt="Modern Wooden Dining Chairs" width="200px" height="200px">
+                          <h5 class="mt-3">Electric Height Adjustable Desk</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.25,999</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/612ElkFLzLL._SX679_.jpg" alt="Almar Velvet Chairs" width="200px" height="200px">
+                          <h5 class="mt-3">Simple Home Office Desk</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#e1d7ab'></i>
+                          </div>
+                          <p class="text-danger">Rs.3,499 <span class="text-muted text-decoration-line-through">Rs.5,999</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+                
+                  <div class="container py-5">
+                    <h2 class=" mb-4">Home Office Table Lamps</h2>
+                    <div class="row g-4">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/41QuZjTk3LL._SY445_SX342_QL70_FMwebp_.jpg" alt="Beau Kitchen Island" width="200px" height="200px">
+                          <h5 class="mt-3">Classy Table Lamp</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.999</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/41VpmC+09FL._SX342_SY445_.jpg" alt="White Kitchen Island" width="200px" height="200px">
+                          <h5 class="mt-3">Rechargeable Desk Lamp</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.1,200</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/41Dz6f+KGZL._SX342_SY445_.jpg" alt="Avery Kitchen Cart" width="200px" height="200px">
+                          <h5 class="mt-3">LED Table Lamp</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.699 <span class="text-muted text-decoration-line-through">Rs.899</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/41NrB9c1eZL._SX300_SY300_QL70_FMwebp_.jpg" alt="Greenview Kitchen Island" width="200px" height="200px">
+                          <h5 class="mt-3">Ceramic Pot Table Lamp</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#e1d7ab'></i>
+                          </div>
+                          <p>Rs.1,499</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+                <div class="container">
+                    <!-- Trending Section -->
+                    <div class="trending-section row align-items-center">
+                        <div class="col-md-6">
+                            <h2>Trending in Home Office Decor</h2>
+                            <p>We provide a unique one-stop-shop for all of your custom design needs.</p>
+                            <a href="#" class="btn btn-dark">Shop Now</a>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://www.apinterio.com/wp-content/uploads/2021/02/Home-office-in-Pune.jpg" alt="Dining Furniture">
+                        </div>
+                    </div>
+                </section>
+                    
+
+ <!-- footer -->
+ <footer class="mt-5 p-5" id="footer">
+    <div class="row">
+      <div class="col-md-3">
+        <h5><b>ABOUT US</b></h5>
+        <p style="text-align: justify; color: black;" class="mt-4">Welcome to Urban Nest – where style meets comfort! Our passion is turning houses into homes with beautifully curated decor that reflects your unique personality. Whether you're looking for modern minimalism or timeless elegance, we offer a variety of options to elevate every corner of your space. Explore our collection and discover how we can help you create the perfect ambiance, one detail at a time. Let's make your home a masterpiece!</p>
+      </div>
+  
+      <div class="col-md-3 text-center">
+        <h5 class="mb-3"><b>Delivery Across India</b></h5>
+        <p style="color: black;">Assam</p>  
+        <p style="color: black;">Bihar</p>
+        <p style="color: black;">Chandigarh</p>
+        <p style="color: black;">Chhattisgarh</p>
+        <p style="color: black;">Delhi</p>
+        <p style="color: black;">Goa</p>
+        <p style="color: black;">Gujarat</p>
+        <p style="color: black;">Kerala</p> 
+      </div>
+       
+  
+      <div class="col-md-3 text-center">
+        <h5 class="mb-3"><b>Shop By Room</b></h5>
+         <a style="text-decoration: none;" href="./living-room.html"><p style="color: black;">Living Room Cecor</p></a>  
+         <a style="text-decoration: none;" href="./bedroom.html"><p style="color: black;">Bedroom Decor</p></a>
+         <a style="text-decoration: none;" href="./kitchen.html"><p style="color: black;">Kitchen & Dining Decor</p></a>
+         <a style="text-decoration: none;" href="./garden.html"><p style="color: black;">Outdoor & Garden Decor</p></a>
+         <a style="text-decoration: none;" href="./home-office.html"><p style="color: black;">Home Office Decor</p></a>
+       </div>
+  
+      <div class="col-md-3 ">
+        <h4><b>Connect Us With</b></h4>
+        <div class="mt-4 d-flex">
+            <i class="fa-brands fa-facebook me-3"></i>           
+            <i class="fa-brands fa-x-twitter me-3"></i> 
+            <i class="fa-brands fa-instagram"></i>        
+        </div>
+        <div class="mt-5">
+          <h5 class="mb-3"><b>Need Any help? Contact Us</b></h5>
+          <p><i class="fa-solid fa-envelope"></i>: Urbannest@gmail.com</p>
+          <P><i class="fa-solid fa-phone"></i>: 8765430092</P>
+          <i class="fa-solid fa-location-dot"></i>: Athani,Near Govt Hospital,Kochi
+  
+        </div>
+      </div><hr>
+      <p class="text-center">©2024 UrbanNest | All Rights Reserved</p>
+    </div>
+  </footer>
+   <!-- Bootstrap Bundle JS -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                    
+</body>
+
+</html>

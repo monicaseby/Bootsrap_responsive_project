@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wishlist</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <img class="ms-3 me-1"
+            src="https://media.istockphoto.com/id/1125893421/vector/vector-logo-design-template-in-simple-linear-style-home-decor-store.jpg?s=612x612&w=0&k=20&c=-y_cnnmn_3kXCCRha2HJKmaG2qkdciFJV2J2jJnZV0k="
+            alt="img1" width="60px" height="60px">
+        <a class="navbar-brand" href="./index.html">Urban Nest</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./about-us.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="living-room.html">Livingroom</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="garden.html">Outdoor & Garden</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home-office.html">Home Office</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="kitchen.html">Kitchen & Dining</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="bedroom.html">Bedrooom & Decor</a>
+                  </li>
+               
+            </ul>
+          
+            <div class="cart">
+                <a style="color: black;" href="./profile.html"><i class="fa-regular fa-user ms-4 "></i></a>
+                <a style="color: black;" href="./cart.html"><i class="fa-solid fa-cart-shopping ms-4"></i></a>
+                <a style="color: black;" href="./wishlist.html"><i class="fa-regular fa-heart ms-3 me-5"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+    <!-- Main Content -->
+    <div class="container my-4">
+        <div class="row">
+            <!-- Cart Items Section -->
+            <div class="col-lg-12">
+                <h2 class="mx-auto p-2 text-center"><b>Your Cart</b></h2>
+                <div class="card mb-3">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRA6Tkyl0PIiy0TN08iWJuPVQ82Y4K4W74vxcdo0lczWbLXqTAU2ZfE7BgpU-8oKfN8Um0WFoI28CAQqQBvAmBMs1ZG7qcw_iwMXsdlpmM&usqp=CAc" alt="Product Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Tall Outdoor planters</h5>
+                                <p class="card-text text-muted">Sold by: Canopy</p>
+                                <p class="card-text">Rs.999</p>
+                                <div class="d-flex align-items-center">
+                                    <label for="quantity1" class="me-2">Qty:</label>
+                                    <input type="number" id="quantity1" class="form-control me-3" value="1" min="1" style="width: 70px;">
+                                    <button class="btn btn text-danger p-0 border border-5">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-3">
+                            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTPt5f7OfFkUDLmc3z7Ijr2rP_L6zdU5Tk1OxNoTgdum3q-tobanq1hEIx78d5moe0-9WFeHPj3O8BFnGlcuuRIycA0gEM9wWby43ii7BUG" alt="Product Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title"> Handpainted Garden Mushroom</h5>
+                                <p class="card-text text-muted">Sold by: Littel Garden</p>
+                                <p class="card-text">Rs.999</p>
+                                <div class="d-flex align-items-center">
+                                    <label for="quantity2" class="me-2">Qty:</label>
+                                    <input type="number" id="quantity2" class="form-control me-3" value="2" min="1" style="width: 70px;">
+                                    <button class="btn btn text-danger p-0 border border-5">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-3">
+                            <img src="https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/t.resize(h:620,w:700)/data/Westelm/08082022img/8144506_1.jpg" alt="Product Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="card-body">
+                                <h5 class="card-title">Outdoor Round Coffee Table</h5>
+                                <p class="card-text text-muted">Sold by: Canopy</p>
+                                <p class="card-text">Rs.18,999</p>
+                                <div class="d-flex align-items-center">
+                                    <label for="quantity2" class="me-2">Qty:</label>
+                                    <input type="number" id="quantity2" class="form-control me-3" value="2" min="1" style="width: 70px;">
+                                    <button class="btn btn text-danger p-0 border border-5">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Price Summary Section -->
+            <div class="">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Order Summary</h4>
+                        <p class="d-flex justify-content-between">
+                            <span>Subtotal (3 items):</span>
+                            <span>Rs.22000</span>
+                        </p>
+                        <p class="d-flex justify-content-between">
+                            <span>Shipping:</span>
+                            <span>Rs.3000</span>
+                        </p>
+                        <hr>
+                        <p class="d-flex justify-content-between fw-bold">
+                            <span>Total:</span>
+                            <span>Rs.25,000</span>
+                        </p>
+                        <a style="text-decoration: none; color: red;" href="./order.html" class="text-center"><h5>Proceed to Checkout</h5></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+     <!-- footer -->
+ <footer class="mt-5 p-5" id="footer">
+    <div class="row">
+      <div class="col-md-3">
+        <h5><b>ABOUT US</b></h5>
+        <p style="text-align: justify; color: black;" class="mt-4">Welcome to Urban Nest – where style meets comfort! Our passion is turning houses into homes with beautifully curated decor that reflects your unique personality. Whether you're looking for modern minimalism or timeless elegance, we offer a variety of options to elevate every corner of your space. Explore our collection and discover how we can help you create the perfect ambiance, one detail at a time. Let's make your home a masterpiece!</p>
+      </div>
+  
+      <div class="col-md-3 text-center">
+        <h5 class="mb-3"><b>Delivery Across India</b></h5>
+        <p style="color: black;">Assam</p>  
+        <p style="color: black;">Bihar</p>
+        <p style="color: black;">Chandigarh</p>
+        <p style="color: black;">Chhattisgarh</p>
+        <p style="color: black;">Delhi</p>
+        <p style="color: black;">Goa</p>
+        <p style="color: black;">Gujarat</p>
+        <p style="color: black;">Kerala</p> 
+      </div>
+       
+  
+      <div class="col-md-3 text-center">
+       <h5 class="mb-3"><b>Shop By Room</b></h5>
+        <a style="text-decoration: none;" href="./living-room.html"><p style="color: black;">Living Room Cecor</p></a>  
+        <a style="text-decoration: none;" href="./bedroom.html"><p style="color: black;">Bedroom Decor</p></a>
+        <a style="text-decoration: none;" href="./kitchen.html"><p style="color: black;">Kitchen & Dining Decor</p></a>
+        <a style="text-decoration: none;" href="./garden.html"><p style="color: black;">Outdoor & Garden Decor</p></a>
+        <a style="text-decoration: none;" href="./home-office.html"><p style="color: black;">Home Office Decor</p></a>
+      </div>
+  
+      <div class="col-md-3 ">
+        <h4><b>Connect Us With</b></h4>
+        <div class="mt-4 d-flex">
+            <i class="fa-brands fa-facebook me-3"></i>           
+            <i class="fa-brands fa-x-twitter me-3"></i> 
+            <i class="fa-brands fa-instagram"></i>        
+        </div>
+        <div class="mt-5">
+          <h5 class="mb-3"><b>Need Any help? Contact Us</b></h5>
+          <p><i class="fa-solid fa-envelope"></i>: Urbannest@gmail.com</p>
+          <P><i class="fa-solid fa-phone"></i>: 8765430092</P>
+          <i class="fa-solid fa-location-dot"></i>: Athani,Near Govt Hospital,Kochi
+  
+        </div>
+      </div><hr>
+      <p class="text-center">©2024 UrbanNest | All Rights Reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>

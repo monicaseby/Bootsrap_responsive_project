@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Room Furniture</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: "Mulish", sans-serif;
+            background-color: #f8f8f8;
+        }
+       
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+       
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+           
+        }
+        .card-title a{
+            color: black;
+        }
+        .vertical-menu {
+            border-right: 1px solid #ddd;
+            padding-right: 15px;
+        }
+        .vertical-menu h5 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .vertical-menu a {
+            display: block;
+            text-decoration: none;
+            padding: 5px 0;
+            color: #555;
+        }
+        .vertical-menu a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        .horizontal-section h5 {
+            font-weight: bold;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+       
+
+
+       
+
+
+       
+
+    .trending-section {
+            background-color: #efebeb;
+            padding: 20px 15px;  
+         }
+
+        .trending-section h2 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .trending-section p {
+            color: #555;
+            margin: 10px 0 15px;        }
+
+
+        .trending-section img {
+            max-width: 100%;
+            height: 350px;
+            border-radius: 8px;
+        }
+
+     
+    /* Divider Style */
+    .divider {
+      border-top: 1px solid #ddd;
+      margin: 20px auto;
+      width: calc(100% - 30px);
+    }
+
+   
+    .section-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+.furniture-style-section,
+.furniture-brand-section {
+    margin-bottom: 20px;
+}
+
+/* Card Styling */
+.furniture-card {
+    height: 300px;
+    margin: 10px auto;    
+    text-align: center;    
+    border: 1px solid #ddd;
+    border-radius: 5px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;      
+}
+
+/* Image Styling */
+.furniture-img {
+    width: 100%;          
+    height: 70%;          
+    object-fit: contain;  
+    border-bottom: 1px solid #ddd;
+}
+
+/* Details Styling */
+.furniture-details {
+    height: 30%;          
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.furniture-title {
+    font-size: 14px;      
+    font-weight: bold;    
+    margin: 0;
+    text-align: center;    
+}
+
+
+       
+       
+    </style>
+</head>
+<body>
+
+        <!-- navbar -->
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <img class="ms-3 me-1"
+            src="https://media.istockphoto.com/id/1125893421/vector/vector-logo-design-template-in-simple-linear-style-home-decor-store.jpg?s=612x612&w=0&k=20&c=-y_cnnmn_3kXCCRha2HJKmaG2qkdciFJV2J2jJnZV0k="
+            alt="img1" width="60px" height="60px">
+        <a class="navbar-brand" href="./index.html">Urban Nest</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./about-us.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="living-room.html">Livingroom</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="garden.html">Outdoor & Garden</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="home-office.html">Home Office</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="kitchen.html">Kitchen & Dining</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="bedroom.html">Bedrooom & Decor</a>
+                  </li>
+               
+            </ul>
+          
+            <div class="cart">
+                <a style="color: black;" href="./profile.html"><i class="fa-regular fa-user ms-4 "></i></a>
+                <a style="color: black;" href="./cart.html"><i class="fa-solid fa-cart-shopping ms-4"></i></a>
+                <a style="color: black;" href="./wishlist.html"><i class="fa-regular fa-heart ms-3 me-5"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>         
+    <!-- Section: Kitchen and Dining Furniture -->
+    <section class="container my-5">
+      <h2 class="section-header text-dark text-center mb-4"><b>Home Office Furniture</b></h2>
+      <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./office-desk.html"><img width="100%" src="https://st.hzcdn.com/fimgs/e2a1634b06e0dfde_2971-w458-h458-b1-p0--.jpg"
+                    class="card-img-top" class="card-img-top " alt="Bar Stools & Counter Stools"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="productemp2.html">Farmhouse Dining Tablek</a></h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./filing-cabinet.html"><img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTPt5f7OfFkUDLmc3z7Ijr2rP_L6zdU5Tk1OxNoTgdum3q-tobanq1hEIx78d5moe0-9WFeHPj3O8BFnGlcuuRIycA0gEM9wWby43ii7BUG"
+                    class="card-img-top" alt="Dining Tables" class="card-img-top ps-0" alt="Dining Tables"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="mushroom.html">Handpainted Garden Mushroom</a></h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./bookshelf-storage.html"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRA6Tkyl0PIiy0TN08iWJuPVQ82Y4K4W74vxcdo0lczWbLXqTAU2ZfE7BgpU-8oKfN8Um0WFoI28CAQqQBvAmBMs1ZG7qcw_iwMXsdlpmM&usqp=CAc"
+                    class="card-img-top" alt="Dining Chairs" class="card-img-top ps-0" alt="Dining Chairs"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="tallplant.html">Tall Outdoor planters</a></h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./desk-chair.html"><img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTcKQzodXmG8569EIbEePj-ihPQRVWVyn77diAEtPAlhECACaN05SIHEf_ih4-iNxBhpx-3YXJW9xWC_RqaPCCCZBgfNOxbD4H0NdXfhJdi52gR7vOqcdpvqQ&usqp=CAc" class="card-img-top ps-0" alt="Buffets & Sideboards"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="outdf.html">Dreamline Outdoor Furniture</a></h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row g-4 mt-3">
+          <!-- Card 1 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./standing-desk.html"><img src="https://www.whisperinghomes.com/media/webp_image/catalog/product/cache/037a1b5c7cd3f20c1ca07770ab088b77/Outdoor-Wall-Lights/LA-WL-073-049/Villa-Outdoor-Wall-Lamp-Small-Hover.webp" class="card-img-top ps-0" alt="Bar Stools & Counter Stools"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="villalight.html">Villa Outdoor Wall Lamp</a></h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./hutch-desk.html"><img src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/Untitled-1_0002_BOPLDC1.jpg?v=1721124964&width=600" class="card-img-top ps-0" alt="Dining Tables"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="concplant.html">Prudence Concrete Planter</a></h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./corner-desk.html"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTboVvsQm9-qFO0xP9gAnP28a0kZgBTqYLNgW-2ctFZgT5GL83i-LCTt5Q1yQAT1RK7wSZW9gjikyw4vwiR-Hojydw4QeZWwJKPY-OBuJcq-4soEuai7JM91Ywd&usqp=CAc"
+                    class="card-img-top" alt="Dining Chairs" class="card-img-top ps-0" alt="Dining Chairs"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="wheelfun.html">Wheel Fun planters</a></h5>
+                  </div>
+              </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="card">
+                  <a href="./floating-desk.html"><img src="https://www.whisperinghomes.com/media/webp_image/catalog/product/cache/037a1b5c7cd3f20c1ca07770ab088b77/Outdoor-Wall-Lights/LA-WL-073-049/Villa-Outdoor-Wall-Lamp-Small-Hover.webp" class="card-img-top ps-0" alt="Buffets & Sideboards"></a>
+                  <div class="card-body">
+                      <h5 class="card-title"><a style="text-decoration: none;" href="ming.html">Ming Garden Jar</a></h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <!-- Left Vertical Menu -->
+                <div class="col-md-3 vertical-menu">
+                    <h5>Outdoor & Garden Decor by Style</h5>
+                    <ul class="list-unstyled">
+                        <li>Modern</li>
+                        <li>Mid-Century Modern</li>
+                        <li>Outdoor Furniture</li>
+                        <li>Outdoor Lightning</li>
+                        <li>Jars</li>
+                        <li>HandCrafts</li>
+                        <li>Traditional</li>
+                        <li>Industrial</li>
+
+
+
+                    </ul>
+                    <h5>Outdoor & Garden Decor by Brands</h5>
+                        
+                    <ul class="list-unstyled">
+                        <li><b>Brands we collab with</b></li>
+                        <li>Canopy</li>
+                        <li>Outdoor</li>
+                        <li>D'flora</li>
+                        <li>Little Garden</li>
+                        <li>Eternal</li>
+                        <li>Giardino</li>
+                       
+
+
+                        <!-- <li><a href="#">Copeland Furniture</a></li>
+                    <li><a href="#">Eagle Furniture</a></li> -->
+                    </ul>
+
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-md-9">
+                    <!--Furniture by Style -->
+                    <div class="furniture-style-section">
+                        <h5>Outdoor & Garden Decor by Style</h5>
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://images.woodenstreet.de/image/cache/data%2Foutdoor-set%2Fsienna%2Fgrey%2Fnew-logo-4%2F1-750x650.jpg"
+                                        class="furniture-img" alt="Modern">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Outdoor Furniture</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://www.whisperinghomes.com/media/webp_image/catalog/product/cache/037a1b5c7cd3f20c1ca07770ab088b77/Gate-Lights/LA-GL-073-021/Fence-Outdoor-Gate-lamp-Black-Hover.webp"
+                                        class="furniture-img" alt="Mid-Century Modern">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Outdoor Lightning</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQHcdVKHg855nTL903-uUtPeQp8heJ-QZFlphEeEr4E69LHxn4SxS4U5aLBA8nR9Z8GtJo-j2hovadMxfbfgUejijJvAJRRxTEmgku-m6Y"
+                                        class="furniture-img" alt="Farmhouse">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">HandCrafts</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://m.media-amazon.com/images/I/71OsgC8BnQL._AC_UF894,1000_QL80_.jpg"
+                                        class="furniture-img" alt="Contemporary">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Jars</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://rippleshome.com/cdn/shop/files/italian-trio-set-of-3-planters-in-light-grey-289320.jpg?v=1719245541&width=800"
+                                        class="furniture-img" alt="Coastal">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Traditional</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRHi9zitKERcDyarKF-idjK1wg0V81voPgIw&s"
+                                        class="furniture-img" alt="Coastal">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Modern</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Furniture by Brand -->
+                    <div class="furniture-brand-section">
+                        <h5>Outdoor & Garden Decor by Brand</h5>
+                        <div class="row g-3">
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://images-platform.99static.com//fLXa2V7KmPy-UeZ6V7xHAAzPLxA=/290x12:866x588/fit-in/500x500/99designs-contests-attachments/85/85772/attachment_85772036"
+                                        class="furniture-img" alt="Four Hands">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">canopy</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://images-platform.99static.com//UE5AWm9681l7IGpJvQG1IcdFgas=/363x17:1623x1277/fit-in/500x500/99designs-contests-attachments/73/73928/attachment_73928861"
+                                        class="furniture-img" alt="Hooker Furniture">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Outdoor</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2022/11/11185110/botanical-flower-garden-by-j-lao-brandcrowd.png"
+                                        class="furniture-img" alt="Lexington">
+                                        <div class="furniture-details">
+                                    <h6 class="furniture-title">D'flora</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://images-platform.99static.com//l39qgHgeii_uGWpWEYQc1qjtR9w=/490x137:1529x1176/fit-in/500x500/99designs-contests-attachments/131/131913/attachment_131913647"
+                                        class="furniture-img" alt="Sunpan">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Little Garden</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2022/11/11185444/nature-lawn-garden-by-town-brandcrowd.png"
+                                        class="furniture-img" alt="Sunpan">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Eternal</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-lg-2">
+                                <div class="furniture-card">
+                                    <img src="https://i.pinimg.com/736x/f2/8c/12/f28c1270f6aabf6bd57ec2bdf0ab62c7.jpg"
+                                        class="furniture-img" alt="Sunpan">
+                                    <div class="furniture-details">
+                                        <h6 class="furniture-title">Giardino</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container py-5">
+                    <h2 class=" mb-4">Flower Planters</h2>
+                    <div class="row g-4">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://ouchcart.com/cdn/shop/products/61JYicxSQ5L._AC_SL1000.jpg?v=1721366433&width=1000"
+                            alt="Gavin Black Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">Metal Plant Stand Holder</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.1499 <span class="text-muted text-decoration-line-through">Rs.3000</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://www.theplantshop.in/cdn/shop/files/buy-trapezoid-medium-and-tall-planters-for-indoor-and-outdoor-use-online-291880.jpg?v=1715275077"
+                            alt="Cove Round Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">Designer Flower Pots</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.2779</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://cdn.shopify.com/s/files/1/0545/0041/products/TeakPlanterPriority9.jpg?v=1694623105"
+                            alt="The Ansel Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">Teak wood planter</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#e1d7ab'></i>
+                          </div>
+                          <p class="text-danger">Rs.8000<span class="text-muted text-decoration-line-through">Rs.12000</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://images-cdn.ubuy.co.in/652d8dc958b96269ab532d7c-hunthawk-head-planters-unique-resin.jpg"
+                            alt="Gavin Black Dining Table" width="200px" height="200px">
+                          <h5 class="mt-3">hunthawk face Planter</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.5000<span class="text-muted text-decoration-line-through">Rs.7000</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+                
+                
+                
+                  <div class="container py-5">
+                    <h2 class=" mb-4">Outdoor Furniture</h2>
+                    <div class="row g-4">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://cdn.shopify.com/s/files/1/0246/6430/9840/files/Blog_In-Post_Image-1_c6ad2634-7004-4afd-a15e-93d180152784.png?v=1670009588" alt="Meridian Sylvester Chair" width="200px" height="200px">
+                          <h5 class="mt-3">Patio Chairs</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.3000<span class="text-muted text-decoration-line-through">Rs.4500</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://5.imimg.com/data5/ANDROID/Default/2023/1/AV/LR/BO/124753272/product-jpeg-500x500.jpg" alt="Camas Iron Dining Chairs" width="200px" height="200px">
+                          <h5 class="mt-3">2 Seater garden Swing</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.18,999</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://m.media-amazon.com/images/I/6105UntY+xL._AC_UF894,1000_QL80_.jpg" alt="Modern Wooden Dining Chairs" width="200px" height="200px">
+                          <h5 class="mt-3">Wooden Hanging Swing</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.30,000</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://i.etsystatic.com/23075587/r/il/015d8e/5542219561/il_fullxfull.5542219561_cmul.jpg" alt="Almar Velvet Chairs" width="200px" height="200px">
+                          <h5 class="mt-3">Bamboo Furniture</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#e1d7ab'></i>
+                          </div>
+                          <p class="text-danger">Rs.45,000 <span class="text-muted text-decoration-line-through">Rs60,000</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                
+                
+                  <div class="container py-5">
+                    <h2 class=" mb-4">Outdoor Lightning</h2>
+                    <div class="row g-4">
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://www.whiteteak.com/media/catalog/product/h/l/hl103-10006_13a_.jpg?width=680&height=680&canvas=680,680&optimize=medium&fit=bounds" alt="Beau Kitchen Island" width="200px" height="200px">
+                          <h5 class="mt-3">Black Outdoor Pendant Light</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.7000</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://www.whiteteak.com/media/catalog/product/h/l/hl103-10002_5_.jpg?width=680&height=680&canvas=680,680&optimize=medium&fit=bounds" alt="White Kitchen Island" width="200px" height="200px">
+                          <h5 class="mt-3">Oudoor pendant light</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p>Rs.5000</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://www.whiteteak.com/media/catalog/product/w/l/wl67-10008_14_.jpg?width=680&height=680&canvas=680,680&optimize=medium&fit=bounds" alt="Avery Kitchen Cart"  width="200px" height="200px">
+                          <h5 class="mt-3">Antique Gold Outdoor Lights</h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                          </div>
+                          <p class="text-danger">Rs.12,000 <span class="text-muted text-decoration-line-through">Rs.14,000</span></p>
+                          <span class="badge bg-danger">SALE</span>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="product-item text-center">
+                          <img src="https://cdn.shopify.com/s/files/1/0632/2526/6422/files/table-lamp-iron-lady-lantern-set-of-two-1.jpg?v=1715958176&width=600" alt="Greenview Kitchen Island" width="200px" height="200px">
+                          <h5 class="mt-3">Iron Lady Lantern Lamp </h5>
+                          <div class="rating mb-2">
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#ecc111'></i>
+                            <i class='bx bxs-star' style='color:#e1d7ab'></i>
+                          </div>
+                          <p>Rs.1000</p>
+                          <a style="text-decoration: none;" href="./order.html"><button class="wishlist ms-4">Buy Now</button></a>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+
+
+
+
+
+
+                <div class="container">
+                    <!-- Trending Section -->
+                    <div class="trending-section row align-items-center">
+                        <div class="col-md-6">
+                            <h2>Trending in Outdoor & Garden decor</h2>
+                            <p>we provide a unique one-stop-shop for all of your custom design needs.</p>
+                            <a href="#" class="btn btn-dark">Shop Now</a>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://media.istockphoto.com/id/1007240024/photo/book-on-a-black-and-white-pouf-in-the-middle-of-a-bright-terrace-with-a-rattan-corner-sofa.jpg?s=612x612&w=0&k=20&c=7dycUnGBrm8XnIGk3GEhkVSVZOSPn-ejiFWLV8B8O34=" alt="Dining Furniture">
+                        </div>
+                    </div>
+                </section>
+                    
+
+ <!-- footer -->
+ <footer class="mt-5 p-5" id="footer">
+    <div class="row">
+      <div class="col-md-3">
+        <h5><b>ABOUT US</b></h5>
+        <p style="text-align: justify; color: black;" class="mt-4">Welcome to Urban Nest – where style meets comfort! Our passion is turning houses into homes with beautifully curated decor that reflects your unique personality. Whether you're looking for modern minimalism or timeless elegance, we offer a variety of options to elevate every corner of your space. Explore our collection and discover how we can help you create the perfect ambiance, one detail at a time. Let's make your home a masterpiece!</p>
+      </div>
+  
+      <div class="col-md-3 text-center">
+        <h5 class="mb-3"><b>Delivery Across India</b></h5>
+        <p style="color: black;">Assam</p>  
+        <p style="color: black;">Bihar</p>
+        <p style="color: black;">Chandigarh</p>
+        <p style="color: black;">Chhattisgarh</p>
+        <p style="color: black;">Delhi</p>
+        <p style="color: black;">Goa</p>
+        <p style="color: black;">Gujarat</p>
+        <p style="color: black;">Kerala</p> 
+      </div>
+       
+  
+      <div class="col-md-3 text-center">
+       <h5 class="mb-3"><b>Shop By Room</b></h5>
+        <a style="text-decoration: none;" href="./living-room.html"><p style="color: black;">Living Room Cecor</p></a>  
+        <a style="text-decoration: none;" href="./bedroom.html"><p style="color: black;">Bedroom Decor</p></a>
+        <a style="text-decoration: none;" href="./kitchen.html"><p style="color: black;">Kitchen & Dining Decor</p></a>
+        <a style="text-decoration: none;" href="./garden.html"><p style="color: black;">Outdoor & Garden Decor</p></a>
+        <a style="text-decoration: none;" href="./home-office.html"><p style="color: black;">Home Office Decor</p></a>
+      </div>
+  
+      <div class="col-md-3 ">
+        <h4><b>Connect Us With</b></h4>
+        <div class="mt-4 d-flex">
+            <i class="fa-brands fa-facebook me-3"></i>           
+            <i class="fa-brands fa-x-twitter me-3"></i> 
+            <i class="fa-brands fa-instagram"></i>        
+        </div>
+        <div class="mt-5">
+          <h5 class="mb-3"><b>Need Any help? Contact Us</b></h5>
+          <p><i class="fa-solid fa-envelope"></i>: Urbannest@gmail.com</p>
+          <P><i class="fa-solid fa-phone"></i>: 8765430092</P>
+          <i class="fa-solid fa-location-dot"></i>: Athani,Near Govt Hospital,Kochi
+  
+        </div>
+      </div><hr>
+      <p class="text-center">©2024 UrbanNest | All Rights Reserved</p>
+    </div>
+  </footer>
+     <!-- Bootstrap Bundle JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+                    
+</body>
+
+</html>
